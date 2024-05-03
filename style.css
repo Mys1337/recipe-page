@@ -1,0 +1,108 @@
+@font-face {
+    font-family:Young ;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont-wght.ttf);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit';
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+.display {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+h1, h2 {
+    font-family: 'Young';
+}
+
+h2 {
+    color: hsl(332, 51%, 32%);
+}
+
+.color-wrap {
+    background-color: hsl(330, 100%, 98%);
+}
+
+p, li {
+    font-weight: 400;
+}
+
+h3 {
+    color: rgb(124, 10, 124);
+}
+
+section {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 20px;
+}
+
+section:first-child,
+section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .display {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        border-radius: 0;
+    }
+    h1{
+        margin-left: 5%;
+    }
+    main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
